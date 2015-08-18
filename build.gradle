@@ -4,7 +4,7 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath 'com.android.tools.build:gradle:1.2.+'
+		classpath 'com.android.tools.build:gradle:1.2.0'
 	}
 }
 apply plugin: 'android'
@@ -74,7 +74,7 @@ def computeVersionNumber = { ->
 }
 
 android {
-	compileSdkVersion 8
+	compileSdkVersion 22
 	buildToolsVersion "19.1"
 
 	sourceSets {
@@ -110,12 +110,12 @@ android {
 	// http://stackoverflow.com/a/19130098
 	signingConfigs {
 		release {
-			storeFile file(System.getenv("KEYSTORE"))
-			storePassword ''
-			keyAlias System.getenv("KEYALIAS")
-			keyPassword ''
-		}
-	}
+            /*storeFile file(System.getenv("KEYSTORE"))
+            storePassword ''
+            keyAlias System.getenv("KEYALIAS")
+            keyPassword ''*/
+        }
+    }
 
 	buildTypes {
 		release {
