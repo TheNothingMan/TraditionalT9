@@ -12,14 +12,15 @@
 
 	<ViewSwitcher
 		android:id="@+id/main_left"
-		android:layout_width="190px"
+		android:layout_weight="2"
 		android:layout_height="58dp"
 		android:layout_marginLeft="1px"
 		android:layout_marginRight="1px"
 		android:background="@drawable/button_custom"
 		android:clickable="true"
 		android:focusable="false"
-		android:longClickable="true" >
+		android:longClickable="true"
+		android:layout_width="wrap_content">
 
 			<include android:id="@+id/main_left_nohold" layout="@layout/lbuttonnohold" />
 			<include android:id="@+id/main_left_hold" layout="@layout/lbuttonhold" />
@@ -28,7 +29,7 @@
 
 	<Button
 		android:id="@+id/main_mid"
-		android:layout_width="94px"
+		android:layout_weight="1"
 		android:layout_height="58dp"
 		android:layout_marginLeft="1px"
 		android:layout_marginRight="1px"
@@ -36,11 +37,12 @@
 		android:focusable="false"
 		android:longClickable="true"
 		android:text="@string/main_mid"
-		android:textColor="@color/button_text" />
+		android:textColor="@color/button_text"
+		android:layout_width="wrap_content" />
 
 	<RelativeLayout
 		android:id="@+id/main_right"
-		android:layout_width="190px"
+		android:layout_weight="2"
 		android:layout_height="58dp"
 		android:layout_marginLeft="1px"
 		android:layout_marginTop="0dp"
@@ -49,12 +51,14 @@
 		android:focusable="false"
 		android:longClickable="true"
 		android:paddingLeft="2dp"
-		android:paddingTop="1dp" >
+		android:paddingTop="1dp"
+		android:layout_width="wrap_content">
 
 		<include
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="0dp"
+			android:layout_centerHorizontal="true"
 			layout="@layout/rbutton" />
 	</RelativeLayout>
 

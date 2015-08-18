@@ -69,7 +69,8 @@ public class T9DB {
 			LANG_SUPPORT("pref_lang_support", 1),
 			MODE_NOTIFY("pref_mode_notify", 0),
 			LAST_LANG("set_last_lang", 1),
-			LAST_WORD("set_last_word", null);
+			LAST_WORD("set_last_word", null),
+			SHOW_HINT("pref_show_hint_table", 1);
 			public final String id;
 			public final Integer defvalue;
 			// lookup map
@@ -480,7 +481,8 @@ public class T9DB {
 					DBSettings.SETTING.LANG_SUPPORT.id + " INTEGER, " +
 					DBSettings.SETTING.MODE_NOTIFY.id	+ " INTEGER, " +
 					DBSettings.SETTING.LAST_LANG.id	+ " INTEGER, " +
-					DBSettings.SETTING.LAST_WORD.id	+ " TEXT )");
+					DBSettings.SETTING.LAST_WORD.id	+ " TEXT, " +
+					DBSettings.SETTING.SHOW_HINT.id + " INTEGER)");
 			StringBuilder sb = new StringBuilder("INSERT OR IGNORE INTO "); sb.append(SETTING_TABLE_NAME);
 			sb.append(" ("); sb.append(COLUMN_ID); sb.append(", ");
 			sb = DBSettings.SETTING.join(DBSettings.SETTING.settings, sb);

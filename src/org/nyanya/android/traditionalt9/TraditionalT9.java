@@ -100,8 +100,13 @@ public class TraditionalT9 extends InputMethodService implements
 		db = T9DB.getInstance(this);
 
 		if (interfacehandler == null) {
-			interfacehandler = new InterfaceHandler(getLayoutInflater().inflate(R.layout.mainview,
-					null), this);
+			if (db.getSettingInt(SETTING.get("pref_show_hint_table"))==1){
+				interfacehandler = new InterfaceHandler(getLayoutInflater().inflate(R.layout.mainview_soft,
+						null), this);
+			}else {
+				interfacehandler = new InterfaceHandler(getLayoutInflater().inflate(R.layout.mainview,
+						null), this);
+			}
 		}
 	}
 
@@ -128,7 +133,12 @@ public class TraditionalT9 extends InputMethodService implements
 	@Override
 	public View onCreateInputView() {
 		updateKeyMode();
-		View v = getLayoutInflater().inflate(R.layout.mainview, null);
+		View v;
+		if (db.getSettingInt(SETTING.get("pref_show_hint_table"))==1){
+			v = getLayoutInflater().inflate(R.layout.mainview_soft, null);
+		}else {
+			v = getLayoutInflater().inflate(R.layout.mainview, null);
+		}
 		interfacehandler.changeView(v);
 		if (mKeyMode == MODE_LANG) {
 			interfacehandler.showHold(true);

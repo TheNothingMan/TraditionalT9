@@ -69,6 +69,22 @@
 	<string name="pref_nuke_warn">Warning: This will delete your entire dictionary. Do you wish to continue?</string>
 	<string name="pref_nuke_title">Nuke IME dictionary</string>
 	<string name="pref_reloadKeys">Force reload of key overrides</string>
+    <string name="pref_show_hint_title">Show hint table</string>
+    <string name="pref_show_hint_sum">Shows a table with letters for use without hardware t9 keyboard, i.e. remote control.</string>
+
+	<!--Key labels for hint table if no hardware keyboard is present-->
+	<string name="key_1" translatable="false"><b>1</b> __</string>
+	<string name="key_2" translatable="false"><b>2</b> abc</string>
+	<string name="key_3" translatable="false"><b>3</b> def</string>
+	<string name="key_4" translatable="false"><b>4</b> ghi</string>
+	<string name="key_5" translatable="false"><b>5</b> jkl</string>
+	<string name="key_6" translatable="false"><b>6</b> mno</string>
+	<string name="key_7" translatable="false"><b>7</b> pqrs</string>
+	<string name="key_8" translatable="false"><b>8</b> tuv</string>
+	<string name="key_9" translatable="false"><b>9</b> wxyz</string>
+	<string name="key_0" translatable="false"><b>0</b> +</string>
+    <string name="key_asterisk" translatable="false"><b>*</b></string>
+    <string name="key_pound" translatable="false"><b>#</b></string>
 
 	<string name="hello_world">Hello world!</string>
 

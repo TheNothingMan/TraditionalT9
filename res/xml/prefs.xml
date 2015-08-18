@@ -21,6 +21,12 @@
 		summary="@string/pref_mode_notify_subtitle"
 		defaultValue="false"
 		/>
+	<SettingCheck
+        id="pref_show_hint_table"
+        title="@string/pref_show_hint_title"
+        summary="@string/pref_show_hint_sum"
+        defaultValue="false"/>
+
 	<Setting title="@string/pref_loaddict" id="loaddict"/>
 	<Setting title="@string/pref_loaduserdict" summary="@string/pref_loaduserdictdesc" id="loaduserdict"/>
 	<Setting title="@string/pref_nukedict" id="nukedict"/>

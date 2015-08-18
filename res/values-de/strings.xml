@@ -69,5 +69,7 @@
 	<string name="pref_reloadKeys">Force reload of key overrides</string>
 
 	<string name="hello_world">Hallo Welt!</string>
+	<string name="pref_show_hint_title">Hinweistafel zeigen</string>
+	<string name="pref_show_hint_sum">Zeigt eine Tafel mit Buchstaben für die Benutzung ohne Hardware-t9-Tasten, z.B. auf einer Fernbedienung</string>
 
 </resources>

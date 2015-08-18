@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="bottom"
+	android:baselineAligned="true"
+    android:orientation="vertical">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="0dp"
+		android:layout_marginRight="0dp"
+		android:layout_marginTop="0dp"
+		android:background="@drawable/bggradient"
+		android:baselineAligned="true"
+		android:gravity="bottom"
+		android:orientation="horizontal" >
+
+		<ViewSwitcher
+			android:id="@+id/main_left"
+			android:layout_weight="2"
+			android:layout_height="58dp"
+			android:layout_marginLeft="1px"
+			android:layout_marginRight="1px"
+			android:background="@drawable/button_custom"
+			android:clickable="true"
+			android:focusable="false"
+			android:longClickable="true"
+			android:layout_width="wrap_content">
+
+				<include android:id="@+id/main_left_nohold" layout="@layout/lbuttonnohold" />
+				<include android:id="@+id/main_left_hold" layout="@layout/lbuttonhold" />
+
+		</ViewSwitcher>
+
+		<Button
+			android:id="@+id/main_mid"
+			android:layout_weight="1"
+			android:layout_height="58dp"
+			android:layout_marginLeft="1px"
+			android:layout_marginRight="1px"
+			android:background="@drawable/button_custom"
+			android:focusable="false"
+			android:longClickable="true"
+			android:text="@string/main_mid"
+			android:textColor="@color/button_text"
+			android:layout_width="wrap_content" />
+
+		<RelativeLayout
+			android:id="@+id/main_right"
+			android:layout_weight="2"
+			android:layout_height="58dp"
+			android:layout_marginLeft="1px"
+			android:layout_marginTop="0dp"
+			android:background="@drawable/button_custom"
+			android:clickable="true"
+			android:focusable="false"
+			android:longClickable="true"
+			android:paddingLeft="2dp"
+			android:paddingTop="1dp"
+			android:layout_width="wrap_content">
+
+			<include
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="0dp"
+				android:layout_centerHorizontal="true"
+				layout="@layout/rbutton" />
+		</RelativeLayout>
+
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bggradient"
+        android:orientation="horizontal"
+        android:divider="@drawable/separator"
+        android:showDividers="middle">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_1"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_2"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_3"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bggradient"
+        android:divider="@drawable/separator"
+        android:showDividers="middle">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_4"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_5"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_6"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bggradient"
+        android:divider="@drawable/separator"
+        android:showDividers="middle">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_7"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_8"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_9"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bggradient"
+        android:divider="@drawable/separator"
+        android:showDividers="middle">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_asterisk"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/key_pound"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
